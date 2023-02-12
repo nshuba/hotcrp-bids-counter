@@ -3,8 +3,6 @@
 import './popup.css';
 
 (function () {
-  console.log("Init");
-
   function getBidsCount() {
     // Communicate with content script of
     // active tab by sending a message
@@ -17,9 +15,11 @@ import './popup.css';
           type: 'COUNT',
         },
         (response) => {
-          console.log('Current count value passed to contentScript file');
           console.log(response);
-          document.getElementById('counter').innerHTML = response.positiveBids;
+          document.getElementById('totalCounter').innerHTML = "Positive Bids: " + response.positiveBids;
+          document.getElementById('counter3').innerHTML = "Score 3: " + response.bids3;
+          document.getElementById('counter2').innerHTML = "Score 2: " + response.bids2;
+          document.getElementById('counter1').innerHTML = "Score 1: " + response.bids1;
         }
       );
     });
