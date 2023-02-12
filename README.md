@@ -5,7 +5,7 @@ Chrome extension for counting the number of positive bids entered on HotCRP.
 ## Using the Pre-Built Extension
 
 ### Installation
-* Download a pre-built extension (`extension.zip`) from [releases](releases/) and unzip
+* Download a pre-built extension (`extension.zip`) from [releases](https://github.com/nshuba/hotcrp-bids-counter/releases) and unzip
 * Open Chrome, navigate to extensions, and enable developer mode
 * Click "Load Unpacked" and navigate to the unzipped `build` directory
 * The extension is now installed!
